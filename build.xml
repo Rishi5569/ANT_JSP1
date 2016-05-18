@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project default = "wartarget" basedir = ".">
-    <property name = "tomcat" value = "C:\Users\rbhushan3\Desktop\Software\apache-tomcat-7.0.69\apache-tomcat-7.0.69"/>
-    <property name = "tomcat.deployment" value = "${tomcat}/webapps"/>
+    <property name = "build" value = "C:\Users\rbhushan3\workspace\ANTTEST1\build"/>
+    <property name = "build.deployment" value = "${build}"/>
     <property name = "base" value = "."/>
     <property name = "src" value = "${base}/WebContent"/>
     
@@ -15,7 +15,7 @@
       
       <target name = "deploytarget">
        
-      <copy file = "${base}/ANTTEST1.war" todir = "${tomcat.deployment}"/>
+      <copy file = "${base}/ANTTEST1.war" todir = "${build.deployment}"/>
       
       </target>
 </project>
