@@ -5,7 +5,19 @@
     <property name = "base" value = "."/>
     <property name = "src" value = "${base}/WebContent"/>
     
-    <target name = "wartarget">
+	<target name = "delete" >
+				
+			<delete dir = "${build}">
+				</delete>
+	</target>
+	
+	<target name = "create" depends="delete">
+		<mkdir dir = "${build}"/>
+	</target>	
+	
+	
+	
+    <target name = "wartarget" depends = "create">
         <war warfile = "ANTTEST1.war" needxmlfile="false">
         	<fileset dir = "./WebContent"/>
         </war>
