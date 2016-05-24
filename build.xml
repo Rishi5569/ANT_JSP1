@@ -15,7 +15,7 @@
       
       <target name = "deploytarget">
        
-      <copy file = "${base}/ANTTEST1.war" todir = "${build.deployment}"/>
+      <copy file = "${base}/ANTTEST1.war"/>
       
       </target>
 </project>
