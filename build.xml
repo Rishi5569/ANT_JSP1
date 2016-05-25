@@ -16,9 +16,9 @@
 		<mkdir dir = "${build}"/>
 	</target>
 	
-    <target name = "wartarget" >
+    <target name = "wartarget" depends = "create">
         <war warfile = "ANTTEST1.war" needxmlfile="false">
-        	<fileset dir = "./WebContent"/>
+        	<fileset dir = "${src}"/>
         </war>
         	<antcall  target = "deploytarget"/> 
      </target>
